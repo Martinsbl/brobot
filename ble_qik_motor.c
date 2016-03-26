@@ -6,6 +6,7 @@
 #include "app_error.h"
 #include "qik_drv_mc.h"
 #include "my_debug.h"
+#include "bsp.h"
 
 
 void ble_qik_motor_on_ble_evt(qik_drv_mc_t * p_qik_motor_control, ble_qik_motor_t * p_ble_qik_motor, ble_evt_t * p_ble_evt)
@@ -50,11 +51,16 @@ static uint32_t measurements_char_add(ble_qik_motor_t * p_ble_qik_motor)
     err_code = sd_ble_uuid_vs_add(&base_uuid, &char_uuid.type);
     APP_ERROR_CHECK(err_code);   
 
+    ble_gatts_attr_md_t cccd_md;
+    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.read_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.write_perm);
+    cccd_md.vloc       = BLE_GATTS_VLOC_STACK;
     
     ble_gatts_char_md_t char_md;
     memset(&char_md, 0, sizeof(char_md));
     char_md.char_props.write = 0;
     char_md.char_props.read  = 1;
+    char_md.p_cccd_md = &cccd_md;
     char_md.char_props.notify = 1;
     
     ble_gatts_attr_md_t attr_md;

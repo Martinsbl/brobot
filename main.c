@@ -541,6 +541,12 @@ int main(void)
     // Enter main loop.
     for (;;)
     {
+        if(do_motor_measurements == true)
+        {
+            qik_drv_get_motor_current(&m_qik_motor_control.measured_current);
+            ble_qik_motor_measurements_update(&m_qik_motor_control, &m_ble_qik_motor);
+            do_motor_measurements = false;
+        }
         //power_manage();
     }
 }
