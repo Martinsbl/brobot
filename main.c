@@ -109,6 +109,7 @@ volatile bool do_motor_measurements = false;
 APP_TIMER_DEF(m_led_timer_id);
 APP_TIMER_DEF(m_battery_timer_id);
 
+
 void timer_battery_handler(void * p_context)
 {
     ble_bas_trigger_battery_level_update(&m_bas);

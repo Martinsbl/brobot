@@ -1,0 +1,14 @@
+.\_build\msgs.o: ..\..\..\..\..\..\..\usefull-nrf-stuff\debugging\msgs.c
+.\_build\msgs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\msgs.o: ..\..\..\..\..\..\..\usefull-nrf-stuff\debugging\SEGGER_RTT.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_ranges.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_types.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_gap.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\nrf_svc.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_l2cap.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_err.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\nrf_error.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_gatt.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_gattc.h
+.\_build\msgs.o: ..\..\..\..\..\..\components\softdevice\s132\headers\ble_gatts.h

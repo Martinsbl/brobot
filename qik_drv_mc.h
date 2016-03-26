@@ -17,7 +17,7 @@
 #define QIK_FORMAT_BYTE1            0x55 // Format bytes that make it more difficult for this command to be accidentally sent
 #define QIK_FORMAT_BYTE2            0x2A // Format bytes that make it more difficult for this command to be accidentally sent
 
-#define QIK_MAX_SPEED               60
+#define QIK_MAX_SPEED               127
 
 #define QIK_UART_COM_TIMEOUT 200000UL
 
