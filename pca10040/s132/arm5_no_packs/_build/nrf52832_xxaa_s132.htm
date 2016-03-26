@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\_build\nrf52832_xxaa_s132.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\_build\nrf52832_xxaa_s132.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sat Mar 26 11:50:14 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Sat Mar 26 12:29:46 2016
 <BR><P>
 <H3>Maximum Stack Usage =        432 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -23,7 +23,7 @@ Mutually Recursive functions
  <LI><a href="#[19]">CCM_AAR_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[19]">CCM_AAR_IRQHandler</a><BR>
  <LI><a href="#[4d]">__asm___11_app_timer_c_cd27f9c3__nrf_delay_us</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4d]">__asm___11_app_timer_c_cd27f9c3__nrf_delay_us</a><BR>
  <LI><a href="#[4c]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4c]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a><BR>
- <LI><a href="#[14f]">state_store_entry_run</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[150]">store_cmd_flash_write_execute</a><BR>
+ <LI><a href="#[150]">state_store_entry_run</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[151]">store_cmd_flash_write_execute</a><BR>
  <LI><a href="#[e3]">clear_operation_execute</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[92]">sm_state_change</a><BR>
  <LI><a href="#[e8]">store_operation_execute</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[92]">sm_state_change</a><BR>
  <LI><a href="#[105]">flash_page_erase</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[100]">flash_api_err_code_process</a><BR>
@@ -114,7 +114,7 @@ Global Symbols
 <P><STRONG><a name="[31]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf52.o(.text)
 </UL>
-<P><STRONG><a name="[161]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[162]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[4a]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -124,15 +124,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[162]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[163]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[163]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[164]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[164]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[165]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[165]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[166]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[166]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[167]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[4c]"></a>__asm___11_nrf_delay_c_532987f3__nrf_delay_us</STRONG> (Thumb, 118 bytes, Stack size 0 bytes, nrf_delay.o(.emb_text))
 <BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
@@ -325,21 +325,21 @@ Global Symbols
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_init
 </UL>
 
-<P><STRONG><a name="[167]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[168]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[4f]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[168]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[169]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[169]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[16a]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[4e]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
 <P><STRONG><a name="[87]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
@@ -355,7 +355,7 @@ Global Symbols
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
 </UL>
 
-<P><STRONG><a name="[16a]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[16b]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[50]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -390,9 +390,9 @@ Global Symbols
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[16b]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[16c]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[16c]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[16d]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[57]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
@@ -417,17 +417,17 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[16d]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[16e]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[56]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[16e]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[16f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
-<P><STRONG><a name="[16f]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[170]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[170]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[171]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[10]"></a>GPIOTE_IRQHandler</STRONG> (Thumb, 420 bytes, Stack size 64 bytes, nrf_drv_gpiote.o(i.GPIOTE_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = GPIOTE_IRQHandler &rArr; nrf_gpiote_event_clear
@@ -473,21 +473,21 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_Write
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strlen
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
-<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;in_pin_handler
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;in_pin_handler
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_update_config_parameters
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_qik_cfg_config_update
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_bas_battery_level_update
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;saadc_init
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;battery_level_char_add
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_motor_speed
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_bas_trigger_battery_level_update
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_init
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 </UL>
 
 <P><STRONG><a name="[67]"></a>SEGGER_RTT_printf</STRONG> (Thumb, 26 bytes, Stack size 32 bytes, segger_rtt_printf.o(i.SEGGER_RTT_printf))
@@ -495,15 +495,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_vprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
-<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;in_pin_handler
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;in_pin_handler
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_update_config_parameters
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_qik_cfg_config_update
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;saadc_handler
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_bas_battery_level_update
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;saadc_init
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;battery_level_char_add
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_motor_speed
 <LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_print_config_parameters
@@ -512,9 +511,10 @@ Global Symbols
 <LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_bas_trigger_battery_level_update
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_init
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_error_handle
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_event_decode
 </UL>
 
@@ -570,11 +570,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> arm_startup_nrf52.o(RESET)
 </UL>
-<P><STRONG><a name="[171]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[172]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[172]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[173]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[173]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[174]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[79]"></a>adv_data_encode</STRONG> (Thumb, 454 bytes, Stack size 32 bytes, ble_advdata.o(i.adv_data_encode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
@@ -620,13 +620,14 @@ Global Symbols
 <LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timers_init
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sleep_mode_enter
 <LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_conn_params_evt
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_params_init
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_init
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_error_handler
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;application_timers_start
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;advertising_init
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timeout_handler_exec
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timeout_handler_exec
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;intern_softdevice_events_execute
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI2_EGU2_IRQHandler
 </UL>
@@ -688,7 +689,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_id_get
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_start_op_schedule
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;application_timers_start
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;application_timers_start
 <LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;conn_params_negotiation
 </UL>
 
@@ -698,7 +700,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_id_get
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_write
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_write
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_disconnect
 </UL>
 
@@ -709,9 +712,9 @@ Global Symbols
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fifo_length
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_rx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
 </UL>
 
 <P><STRONG><a name="[a2]"></a>app_uart_init</STRONG> (Thumb, 178 bytes, Stack size 56 bytes, app_uart_fifo.o(i.app_uart_init))
@@ -723,7 +726,7 @@ Global Symbols
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_init
 <LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_uart_setup
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_uart_setup
 </UL>
 
 <P><STRONG><a name="[a7]"></a>app_uart_put</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, app_uart_fifo.o(i.app_uart_put))
@@ -734,10 +737,10 @@ Global Symbols
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_tx_in_progress
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_tx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_byte
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_byte
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
 </UL>
 
 <P><STRONG><a name="[b6]"></a>ble_advdata_set</STRONG> (Thumb, 148 bytes, Stack size 96 bytes, ble_advdata.o(i.ble_advdata_set))
@@ -945,7 +948,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -968,7 +971,7 @@ Global Symbols
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;channel_port_get
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;channel_handler_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 </UL>
 
 <P><STRONG><a name="[11b]"></a>nrf_drv_gpiote_in_init</STRONG> (Thumb, 198 bytes, Stack size 40 bytes, nrf_drv_gpiote.o(i.nrf_drv_gpiote_in_init))
@@ -978,7 +981,7 @@ Global Symbols
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_cfg
 <LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;channel_port_alloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 </UL>
 
 <P><STRONG><a name="[11f]"></a>nrf_drv_gpiote_init</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, nrf_drv_gpiote.o(i.nrf_drv_gpiote_init))
@@ -989,7 +992,7 @@ Global Symbols
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;channel_free
 <LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_common_irq_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 </UL>
 
 <P><STRONG><a name="[c7]"></a>nrf_drv_saadc_buffer_convert</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, nrf_drv_saadc.o(i.nrf_drv_saadc_buffer_convert))
@@ -1106,7 +1109,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_access_in_progress
 </UL>
 
-<P><STRONG><a name="[140]"></a>pstorage_sys_event_handler</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, pstorage.o(i.pstorage_sys_event_handler))
+<P><STRONG><a name="[141]"></a>pstorage_sys_event_handler</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, pstorage.o(i.pstorage_sys_event_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = pstorage_sys_event_handler &rArr; flash_operation_success_run &rArr; store_sub_state_sm_run &rArr; store_cmd_flash_write_execute &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_operation_success_run
@@ -1115,35 +1118,35 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_evt_dispatch
 </UL>
 
-<P><STRONG><a name="[143]"></a>qik_drv_get_all_config_parameters</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, qik_drv_mc.o(i.qik_drv_get_all_config_parameters))
+<P><STRONG><a name="[144]"></a>qik_drv_get_all_config_parameters</STRONG> (Thumb, 80 bytes, Stack size 32 bytes, qik_drv_mc.o(i.qik_drv_get_all_config_parameters))
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = qik_drv_get_all_config_parameters &rArr; qik_drv_get_parameter &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
-<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_parameter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_update_config_parameters
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
 <P><STRONG><a name="[10c]"></a>qik_drv_get_error</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, qik_drv_mc.o(i.qik_drv_get_error))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = qik_drv_get_error &rArr; qik_drv_get_byte &rArr; app_uart_get &rArr; nrf_drv_uart_rx &rArr; nrf_drv_uart_rx_for_uart &rArr; rx_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;in_pin_handler
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
-<P><STRONG><a name="[146]"></a>qik_drv_get_firmware_version</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, qik_drv_mc.o(i.qik_drv_get_firmware_version))
+<P><STRONG><a name="[147]"></a>qik_drv_get_firmware_version</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, qik_drv_mc.o(i.qik_drv_get_firmware_version))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = qik_drv_get_firmware_version &rArr; qik_drv_get_byte &rArr; app_uart_get &rArr; nrf_drv_uart_rx &rArr; nrf_drv_uart_rx_for_uart &rArr; rx_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
+<BR>[Calls]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
-<P><STRONG><a name="[144]"></a>qik_drv_get_parameter</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, qik_drv_mc.o(i.qik_drv_get_parameter))
+<P><STRONG><a name="[145]"></a>qik_drv_get_parameter</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, qik_drv_mc.o(i.qik_drv_get_parameter))
 <BR><BR>[Stack]<UL><LI>Max Depth = 336<LI>Call Chain = qik_drv_get_parameter &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
@@ -1151,7 +1154,7 @@ Global Symbols
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_put
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
 </UL>
 
 <P><STRONG><a name="[114]"></a>qik_drv_print_config_parameters</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, qik_drv_mc.o(i.qik_drv_print_config_parameters))
@@ -1167,7 +1170,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_byte
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_qik_motor_on_ble_evt
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_motor_safety_handler
@@ -1185,18 +1188,18 @@ Global Symbols
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[147]"></a>qik_drv_setup</STRONG> (Thumb, 374 bytes, Stack size 40 bytes, qik_drv_mc.o(i.qik_drv_setup))
+<P><STRONG><a name="[148]"></a>qik_drv_setup</STRONG> (Thumb, 374 bytes, Stack size 40 bytes, qik_drv_mc.o(i.qik_drv_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 408<LI>Call Chain = qik_drv_setup &rArr; qik_drv_get_all_config_parameters &rArr; qik_drv_get_parameter &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_firmware_version
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_firmware_version
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_error
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_uart_setup
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_uart_setup
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
 <LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_init
@@ -1208,7 +1211,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_parameter
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_all_config_parameters
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_qik_cfg_on_ble_evt
 </UL>
@@ -1255,7 +1258,7 @@ Global Symbols
 <P><STRONG><a name="[dd]"></a>softdevice_handler_init</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, softdevice_handler.o(i.softdevice_handler_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = softdevice_handler_init &rArr; sd_nvic_EnableIRQ
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_nvic_EnableIRQ
+<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sd_nvic_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_stack_init
 </UL>
@@ -1275,7 +1278,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_led_handler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_clear
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_clear
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.timers_init)
 </UL>
@@ -1299,7 +1302,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ab]"></a>application_timers_start</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, main.o(i.application_timers_start))
+<P><STRONG><a name="[ab]"></a>application_timers_start</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, main.o(i.application_timers_start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = application_timers_start &rArr; app_timer_start &rArr; timer_start_op_schedule &rArr; user_op_alloc
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
@@ -1367,13 +1370,19 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[153]"></a>nrf_gpio_pin_clear</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, main.o(i.nrf_gpio_pin_clear))
+<P><STRONG><a name="[154]"></a>nrf_gpio_pin_clear</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, main.o(i.nrf_gpio_pin_clear))
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_led_handler
 </UL>
 
 <P><STRONG><a name="[10a]"></a>nrf_gpio_pin_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, main.o(i.nrf_gpio_pin_set))
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_led_handler
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
+</UL>
+
+<P><STRONG><a name="[13f]"></a>nrf_gpio_pin_toggle</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, main.o(i.nrf_gpio_pin_toggle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = nrf_gpio_pin_toggle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;on_ble_evt
 </UL>
 
 <P><STRONG><a name="[32]"></a>on_adv_evt</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, main.o(i.on_adv_evt))
@@ -1383,10 +1392,14 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.advertising_init)
 </UL>
-<P><STRONG><a name="[d1]"></a>on_ble_evt</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, main.o(i.on_ble_evt))
-<BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = on_ble_evt &rArr; print_evt &rArr; gap_event_decode &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
+<P><STRONG><a name="[d1]"></a>on_ble_evt</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, main.o(i.on_ble_evt))
+<BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = on_ble_evt &rArr; print_evt &rArr; gap_event_decode &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
 <BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_evt
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_toggle
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_evt_dispatch
 </UL>
@@ -1401,7 +1414,7 @@ Local Symbols
 <P><STRONG><a name="[112]"></a>qik_drv_init</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.qik_drv_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = qik_drv_init &rArr; qik_drv_setup &rArr; qik_drv_get_all_config_parameters &rArr; qik_drv_get_parameter &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
 </UL>
@@ -1430,12 +1443,12 @@ Local Symbols
 <P><STRONG><a name="[36]"></a>sys_evt_dispatch</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, main.o(i.sys_evt_dispatch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = sys_evt_dispatch &rArr; ble_advertising_on_sys_evt &rArr; ble_advertising_start &rArr; ble_advdata_set &rArr; adv_data_encode &rArr; uuid_list_encode &rArr; uuid_list_sized_encode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ble_advertising_on_sys_evt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.ble_stack_init)
 </UL>
-<P><STRONG><a name="[115]"></a>timers_init</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, main.o(i.timers_init))
+<P><STRONG><a name="[115]"></a>timers_init</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, main.o(i.timers_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = timers_init &rArr; app_error_handler &rArr; app_error_fault_handler &rArr; app_error_save_and_stop
 </UL>
 <BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_init
@@ -1521,35 +1534,35 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> qik_drv_mc.o(i.qik_drv_err_pin_setup)
 </UL>
-<P><STRONG><a name="[142]"></a>nrf_gpio_pin_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, qik_drv_mc.o(i.nrf_gpio_pin_set))
-<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<P><STRONG><a name="[143]"></a>nrf_gpio_pin_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, qik_drv_mc.o(i.nrf_gpio_pin_set))
+<BR><BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_err_pin_setup
 </UL>
 
-<P><STRONG><a name="[141]"></a>qik_drv_err_pin_setup</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, qik_drv_mc.o(i.qik_drv_err_pin_setup))
+<P><STRONG><a name="[142]"></a>qik_drv_err_pin_setup</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, qik_drv_mc.o(i.qik_drv_err_pin_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = qik_drv_err_pin_setup &rArr; SEGGER_RTT_printf &rArr; SEGGER_RTT_vprintf &rArr; _PrintInt &rArr; _PrintUnsigned &rArr; _StoreChar &rArr; SEGGER_RTT_Write
 </UL>
-<BR>[Calls]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_printf
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEGGER_RTT_WriteString
 <LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_gpiote_init
 <LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_gpiote_in_init
 <LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_gpiote_in_event_enable
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
-<P><STRONG><a name="[145]"></a>qik_drv_get_byte</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, qik_drv_mc.o(i.qik_drv_get_byte))
+<P><STRONG><a name="[146]"></a>qik_drv_get_byte</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, qik_drv_mc.o(i.qik_drv_get_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = qik_drv_get_byte &rArr; app_uart_get &rArr; nrf_drv_uart_rx &rArr; nrf_drv_uart_rx_for_uart &rArr; rx_enable
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_put
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_firmware_version
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_firmware_version
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_get_error
 </UL>
 
-<P><STRONG><a name="[148]"></a>qik_drv_set_byte</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, qik_drv_mc.o(i.qik_drv_set_byte))
+<P><STRONG><a name="[149]"></a>qik_drv_set_byte</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, qik_drv_mc.o(i.qik_drv_set_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = qik_drv_set_byte &rArr; app_uart_put &rArr; app_fifo_get &rArr; fifo_get &rArr; fifo_peek
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_put
@@ -1557,12 +1570,12 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_set_motor_speed
 </UL>
 
-<P><STRONG><a name="[149]"></a>qik_drv_uart_setup</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, qik_drv_mc.o(i.qik_drv_uart_setup))
+<P><STRONG><a name="[14a]"></a>qik_drv_uart_setup</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, qik_drv_mc.o(i.qik_drv_uart_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = qik_drv_uart_setup &rArr; app_uart_init &rArr; nrf_drv_uart_init &rArr; apply_config &rArr; nrf_gpio_cfg_input &rArr; nrf_gpio_cfg
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_uart_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
+<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qik_drv_setup
 </UL>
 
 <P><STRONG><a name="[3a]"></a>uart_error_handle</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, qik_drv_mc.o(i.uart_error_handle))
@@ -1671,12 +1684,12 @@ Local Symbols
 <P><STRONG><a name="[81]"></a>uuid_list_encode</STRONG> (Thumb, 78 bytes, Stack size 40 bytes, ble_advdata.o(i.uuid_list_encode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = uuid_list_encode &rArr; uuid_list_sized_encode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_sized_encode
+<BR>[Calls]<UL><LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_sized_encode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adv_data_encode
 </UL>
 
-<P><STRONG><a name="[160]"></a>uuid_list_sized_encode</STRONG> (Thumb, 220 bytes, Stack size 56 bytes, ble_advdata.o(i.uuid_list_sized_encode))
+<P><STRONG><a name="[161]"></a>uuid_list_sized_encode</STRONG> (Thumb, 220 bytes, Stack size 56 bytes, ble_advdata.o(i.uuid_list_sized_encode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = uuid_list_sized_encode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uuid_list_encode
@@ -1917,7 +1930,7 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_config
 </UL>
 
-<P><STRONG><a name="[15b]"></a>nrf_uart_errorsrc_get_and_clear</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uart_errorsrc_get_and_clear))
+<P><STRONG><a name="[15c]"></a>nrf_uart_errorsrc_get_and_clear</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uart_errorsrc_get_and_clear))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_irq_handler
 </UL>
 
@@ -1952,7 +1965,7 @@ Local Symbols
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_rx_for_uart
 </UL>
 
-<P><STRONG><a name="[15a]"></a>nrf_uart_int_enable_check</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uart_int_enable_check))
+<P><STRONG><a name="[15b]"></a>nrf_uart_int_enable_check</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uart_int_enable_check))
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_irq_handler
 </UL>
 
@@ -1967,7 +1980,7 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_config
 </UL>
 
-<P><STRONG><a name="[15e]"></a>nrf_uarte_errorsrc_get_and_clear</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uarte_errorsrc_get_and_clear))
+<P><STRONG><a name="[15f]"></a>nrf_uarte_errorsrc_get_and_clear</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uarte_errorsrc_get_and_clear))
 <BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uarte_irq_handler
 </UL>
 
@@ -1998,7 +2011,7 @@ Local Symbols
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_rx_for_uarte
 </UL>
 
-<P><STRONG><a name="[15f]"></a>nrf_uarte_rx_amount_get</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uarte_rx_amount_get))
+<P><STRONG><a name="[160]"></a>nrf_uarte_rx_amount_get</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, nrf_drv_uart.o(i.nrf_uarte_rx_amount_get))
 <BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uarte_irq_handler
 </UL>
 
@@ -2020,7 +2033,7 @@ Local Symbols
 <LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_rx_for_uart
 </UL>
 
-<P><STRONG><a name="[15c]"></a>rx_done_event</STRONG> (Thumb, 30 bytes, Stack size 32 bytes, nrf_drv_uart.o(i.rx_done_event))
+<P><STRONG><a name="[15d]"></a>rx_done_event</STRONG> (Thumb, 30 bytes, Stack size 32 bytes, nrf_drv_uart.o(i.rx_done_event))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rx_done_event
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uarte_irq_handler
@@ -2046,7 +2059,7 @@ Local Symbols
 <LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_drv_uart_tx_for_uart
 </UL>
 
-<P><STRONG><a name="[15d]"></a>tx_done_event</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, nrf_drv_uart.o(i.tx_done_event))
+<P><STRONG><a name="[15e]"></a>tx_done_event</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, nrf_drv_uart.o(i.tx_done_event))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tx_done_event
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uarte_irq_handler
@@ -2056,16 +2069,16 @@ Local Symbols
 <P><STRONG><a name="[78]"></a>uart_irq_handler</STRONG> (Thumb, 342 bytes, Stack size 32 bytes, nrf_drv_uart.o(i.uart_irq_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = uart_irq_handler &rArr; rx_done_event
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
+<BR>[Calls]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
 <LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_byte
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_done_event
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_done_event
 <LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_byte
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_task_trigger
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_int_enable_check
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_int_enable_check
 <LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_int_disable
 <LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_clear
 <LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_event_check
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_errorsrc_get_and_clear
+<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uart_errorsrc_get_and_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTE0_UART0_IRQHandler
 </UL>
@@ -2073,12 +2086,12 @@ Local Symbols
 <P><STRONG><a name="[77]"></a>uarte_irq_handler</STRONG> (Thumb, 286 bytes, Stack size 32 bytes, nrf_drv_uart.o(i.uarte_irq_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = uarte_irq_handler &rArr; rx_done_event
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_done_event
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_rx_amount_get
+<BR>[Calls]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tx_done_event
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rx_done_event
+<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_rx_amount_get
 <LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_event_clear
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_event_check
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_errorsrc_get_and_clear
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_uarte_errorsrc_get_and_clear
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTE0_UART0_IRQHandler
 </UL>
@@ -2137,7 +2150,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_process
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_idle_entry_run
+<BR>[Called By]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_idle_entry_run
 </UL>
 
 <P><STRONG><a name="[ed]"></a>cmd_queue_element_init</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, pstorage.o(i.cmd_queue_element_init))
@@ -2208,7 +2221,7 @@ Local Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sm_state_change
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_notify_error_state_transit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
 </UL>
 
 <P><STRONG><a name="[102]"></a>flash_operation_success_run</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, pstorage.o(i.flash_operation_success_run))
@@ -2218,7 +2231,7 @@ Local Symbols
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_sub_state_sm_run
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;erase_sub_state_sm_run
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_sys_event_handler
 </UL>
 
 <P><STRONG><a name="[105]"></a>flash_page_erase</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, pstorage.o(i.flash_page_erase))
@@ -2229,7 +2242,7 @@ Local Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_swap_erase_entry_run
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_erase_data_page_entry_run
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_entry_run
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_entry_run
 </UL>
 
 <P><STRONG><a name="[106]"></a>flash_write</STRONG> (Thumb, 28 bytes, Stack size 24 bytes, pstorage.o(i.flash_write))
@@ -2237,7 +2250,7 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_api_err_code_process
 </UL>
-<BR>[Called By]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
+<BR>[Called By]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_write_data_swap_entry_run
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_restore_tail_entry_run
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_restore_head_entry_run
@@ -2281,7 +2294,7 @@ Local Symbols
 <LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;erase_sub_state_sm_run
 </UL>
 
-<P><STRONG><a name="[13f]"></a>pstorage_flash_page_end</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pstorage.o(i.pstorage_flash_page_end))
+<P><STRONG><a name="[140]"></a>pstorage_flash_page_end</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pstorage.o(i.pstorage_flash_page_end))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = pstorage_flash_page_end
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
@@ -2294,13 +2307,13 @@ Local Symbols
 
 <P><STRONG><a name="[e4]"></a>pstorage_flash_page_size</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, pstorage.o(i.pstorage_flash_page_size))
 <BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tail_word_size_calculate
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_write_data_swap_entry_run
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_swap_erase_entry_run
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_restore_tail_entry_run
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_restore_head_entry_run
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
 <LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_tail_data_page_swap_required
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_page_erase_required
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_operation_execute
@@ -2309,7 +2322,7 @@ Local Symbols
 <P><STRONG><a name="[92]"></a>sm_state_change</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, pstorage.o(i.sm_state_change))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_operation_execute
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_state_err_busy_process
@@ -2320,30 +2333,30 @@ Local Symbols
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_notify_error_state_transit
 </UL>
 
-<P><STRONG><a name="[14c]"></a>state_data_erase_entry_run</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, pstorage.o(i.state_data_erase_entry_run))
+<P><STRONG><a name="[14d]"></a>state_data_erase_entry_run</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, pstorage.o(i.state_data_erase_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = state_data_erase_entry_run &rArr; flash_page_erase &rArr;  flash_api_err_code_process (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_page_erase
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
 </UL>
 
-<P><STRONG><a name="[14d]"></a>state_data_erase_swap_entry_run</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, pstorage.o(i.state_data_erase_swap_entry_run))
+<P><STRONG><a name="[14e]"></a>state_data_erase_swap_entry_run</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, pstorage.o(i.state_data_erase_swap_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = state_data_erase_swap_entry_run &rArr; swap_sub_state_state_change &rArr; swap_sub_state_entry_action_run
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_sub_state_state_change
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
 </UL>
 
-<P><STRONG><a name="[14a]"></a>state_entry_action_run</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, pstorage.o(i.state_entry_action_run))
+<P><STRONG><a name="[14b]"></a>state_entry_action_run</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, pstorage.o(i.state_entry_action_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_store_entry_run
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_idle_entry_run
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_entry_run
+<BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_store_entry_run
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_idle_entry_run
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_entry_run
 </UL>
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sm_state_change
 </UL>
@@ -2355,19 +2368,19 @@ Local Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pstorage.o(.constdata)
 </UL>
-<P><STRONG><a name="[14e]"></a>state_idle_entry_run</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, pstorage.o(i.state_idle_entry_run))
+<P><STRONG><a name="[14f]"></a>state_idle_entry_run</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, pstorage.o(i.state_idle_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_queue_dequeue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
 </UL>
 
 <P><STRONG><a name="[44]"></a>state_restore_head_entry_run</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, pstorage.o(i.state_restore_head_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = state_restore_head_entry_run &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pstorage.o(.constdata)
@@ -2376,25 +2389,25 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = state_restore_tail_entry_run &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pstorage.o(.constdata)
 </UL>
-<P><STRONG><a name="[14f]"></a>state_store_entry_run</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, pstorage.o(i.state_store_entry_run))
+<P><STRONG><a name="[150]"></a>state_store_entry_run</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, pstorage.o(i.state_store_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + In Cycle
 <LI>Call Chain = state_store_entry_run &rArr;  store_cmd_flash_write_execute (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_entry_action_run
 </UL>
 
 <P><STRONG><a name="[40]"></a>state_swap_erase_entry_run</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, pstorage.o(i.state_swap_erase_entry_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = state_swap_erase_entry_run &rArr; flash_page_erase &rArr;  flash_api_err_code_process (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_page_erase
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pstorage.o(.constdata)
@@ -2403,19 +2416,19 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = state_write_data_swap_entry_run &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_end
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> pstorage.o(.constdata)
 </UL>
-<P><STRONG><a name="[150]"></a>store_cmd_flash_write_execute</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, pstorage.o(i.store_cmd_flash_write_execute))
+<P><STRONG><a name="[151]"></a>store_cmd_flash_write_execute</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, pstorage.o(i.store_cmd_flash_write_execute))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = store_cmd_flash_write_execute &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pstorage_flash_page_size
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_write
 </UL>
 <BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_sub_state_sm_run
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_store_entry_run
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_store_entry_run
 </UL>
 
 <P><STRONG><a name="[e8]"></a>store_operation_execute</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, pstorage.o(i.store_operation_execute))
@@ -2431,7 +2444,7 @@ Local Symbols
 <P><STRONG><a name="[103]"></a>store_sub_state_sm_run</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, pstorage.o(i.store_sub_state_sm_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = store_sub_state_sm_run &rArr; store_cmd_flash_write_execute &rArr; flash_write &rArr; flash_api_err_code_process &rArr; app_notify_error_state_transit &rArr; sm_state_change &rArr; state_entry_action_run &rArr; state_idle_entry_run &rArr; cmd_queue_dequeue &rArr; cmd_process &rArr; update_operation_execute &rArr; clear_operation_execute &rArr;  sm_state_change (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;store_cmd_flash_write_execute
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_state_err_busy_process
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;command_end_procedure_run
 </UL>
@@ -2456,7 +2469,7 @@ Local Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_page_erase_state_run
 </UL>
 
-<P><STRONG><a name="[151]"></a>swap_sub_state_entry_action_run</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, pstorage.o(i.swap_sub_state_entry_action_run))
+<P><STRONG><a name="[152]"></a>swap_sub_state_entry_action_run</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, pstorage.o(i.swap_sub_state_entry_action_run))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = swap_sub_state_entry_action_run
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_sub_state_state_change
@@ -2483,11 +2496,11 @@ Local Symbols
 <P><STRONG><a name="[f7]"></a>swap_sub_state_state_change</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, pstorage.o(i.swap_sub_state_state_change))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = swap_sub_state_state_change &rArr; swap_sub_state_entry_action_run
 </UL>
-<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_sub_state_entry_action_run
+<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_sub_state_entry_action_run
 </UL>
 <BR>[Called By]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_sub_state_err_busy_process
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swap_erase_state_run
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;state_data_erase_swap_entry_run
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;head_restore_state_run
 <LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_operation_failure_run
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;data_to_swap_write_state_run
@@ -2563,9 +2576,9 @@ Local Symbols
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_start
 </UL>
 
-<P><STRONG><a name="[157]"></a>NVIC_SetPendingIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_timer.o(i.NVIC_SetPendingIRQ))
+<P><STRONG><a name="[158]"></a>NVIC_SetPendingIRQ</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, app_timer.o(i.NVIC_SetPendingIRQ))
 <BR><BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_timeouts_check_sched
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
 </UL>
 
 <P><STRONG><a name="[96]"></a>NVIC_SetPriority</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, app_timer.o(i.NVIC_SetPriority))
@@ -2589,11 +2602,11 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
 </UL>
 
-<P><STRONG><a name="[154]"></a>elapsed_ticks_acquire</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, app_timer.o(i.elapsed_ticks_acquire))
+<P><STRONG><a name="[155]"></a>elapsed_ticks_acquire</STRONG> (Thumb, 82 bytes, Stack size 0 bytes, app_timer.o(i.elapsed_ticks_acquire))
 <BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
 </UL>
 
-<P><STRONG><a name="[155]"></a>expired_timers_handler</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, app_timer.o(i.expired_timers_handler))
+<P><STRONG><a name="[156]"></a>expired_timers_handler</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, app_timer.o(i.expired_timers_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = expired_timers_handler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler
@@ -2660,7 +2673,7 @@ Local Symbols
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
 </UL>
 
-<P><STRONG><a name="[152]"></a>timeout_handler_exec</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, app_timer.o(i.timeout_handler_exec))
+<P><STRONG><a name="[153]"></a>timeout_handler_exec</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, app_timer.o(i.timeout_handler_exec))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = timeout_handler_exec &rArr; app_error_handler &rArr; app_error_fault_handler &rArr; app_error_save_and_stop
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_error_handler
@@ -2673,17 +2686,17 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_insertions_handler
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_deletions_handler
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;expired_timers_handler
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;elapsed_ticks_acquire
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;expired_timers_handler
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;elapsed_ticks_acquire
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI0_EGU0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[156]"></a>timer_list_handler_sched</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, app_timer.o(i.timer_list_handler_sched))
+<P><STRONG><a name="[157]"></a>timer_list_handler_sched</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, app_timer.o(i.timer_list_handler_sched))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_list_handler_sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_timeouts_check
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
@@ -2705,9 +2718,9 @@ Local Symbols
 <P><STRONG><a name="[9c]"></a>timer_start_op_schedule</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, app_timer.o(i.timer_start_op_schedule))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = timer_start_op_schedule &rArr; user_op_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_enque
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<BR>[Calls]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_enque
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_counter_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
@@ -2716,9 +2729,9 @@ Local Symbols
 <P><STRONG><a name="[9e]"></a>timer_stop_op_schedule</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, app_timer.o(i.timer_stop_op_schedule))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = timer_stop_op_schedule &rArr; user_op_alloc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_enque
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<BR>[Calls]<UL><LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_enque
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;user_op_alloc
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
 </UL>
@@ -2726,8 +2739,8 @@ Local Symbols
 <P><STRONG><a name="[5e]"></a>timer_timeouts_check</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, app_timer.o(i.timer_timeouts_check))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = timer_timeouts_check &rArr; timeout_handler_exec &rArr; app_error_handler &rArr; app_error_fault_handler &rArr; app_error_save_and_stop
 </UL>
-<BR>[Calls]<UL><LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timeout_handler_exec
+<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_list_handler_sched
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timeout_handler_exec
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ticks_diff_get
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc1_counter_get
 </UL>
@@ -2737,7 +2750,7 @@ Local Symbols
 <P><STRONG><a name="[f2]"></a>timer_timeouts_check_sched</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, app_timer.o(i.timer_timeouts_check_sched))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_timeouts_check_sched
 </UL>
-<BR>[Calls]<UL><LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
+<BR>[Calls]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetPendingIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;compare_reg_update
 </UL>
@@ -2745,18 +2758,18 @@ Local Symbols
 <P><STRONG><a name="[9b]"></a>user_id_get</STRONG> (Thumb, 78 bytes, Stack size 12 bytes, app_timer.o(i.user_id_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = user_id_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_stop
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_timer_start
 </UL>
 
-<P><STRONG><a name="[158]"></a>user_op_alloc</STRONG> (Thumb, 48 bytes, Stack size 12 bytes, app_timer.o(i.user_op_alloc))
+<P><STRONG><a name="[159]"></a>user_op_alloc</STRONG> (Thumb, 48 bytes, Stack size 12 bytes, app_timer.o(i.user_op_alloc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = user_op_alloc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_start_op_schedule
 </UL>
 
-<P><STRONG><a name="[159]"></a>user_op_enque</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_timer.o(i.user_op_enque))
+<P><STRONG><a name="[15a]"></a>user_op_enque</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, app_timer.o(i.user_op_enque))
 <BR><BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_stop_op_schedule
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_start_op_schedule
 </UL>
@@ -2847,7 +2860,7 @@ Local Symbols
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_PrintInt
 </UL>
 
-<P><STRONG><a name="[14b]"></a>sd_nvic_EnableIRQ</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, softdevice_handler.o(i.sd_nvic_EnableIRQ))
+<P><STRONG><a name="[14c]"></a>sd_nvic_EnableIRQ</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, softdevice_handler.o(i.sd_nvic_EnableIRQ))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = sd_nvic_EnableIRQ
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;softdevice_handler_init

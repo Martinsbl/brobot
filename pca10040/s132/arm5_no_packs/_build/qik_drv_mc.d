@@ -45,4 +45,3 @@
 .\_build\qik_drv_mc.o: ..\..\..\..\..\..\..\usefull-nrf-stuff\debugging\my_debug.h
 .\_build\qik_drv_mc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\_build\qik_drv_mc.o: ..\..\..\..\..\..\..\usefull-nrf-stuff\debugging\Segger_RTT.h
-.\_build\qik_drv_mc.o: ..\..\..\..\..\..\components\libraries\timer\app_timer.h

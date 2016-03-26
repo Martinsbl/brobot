@@ -110,6 +110,20 @@ APP_TIMER_DEF(m_led_timer_id);
 APP_TIMER_DEF(m_battery_timer_id);
 
 
+#define TIMER_INTERVAL_MOTOR_SAFETY APP_TIMER_TICKS(300, 0)
+APP_TIMER_DEF(m_motor_safety_timer_id);
+bool turn_off_motors = false;
+
+
+void timer_motor_safety_handler(void * p_context)
+{    
+    m_qik_motor_control.speed.m0_speed = 0;
+    m_qik_motor_control.speed.m1_speed = 0;
+    qik_drv_set_motor_speed(&m_qik_motor_control);
+}
+
+
+
 void timer_battery_handler(void * p_context)
 {
     ble_bas_trigger_battery_level_update(&m_bas);
@@ -182,6 +196,10 @@ static void timers_init(void)
     APP_ERROR_CHECK(err_code);
     
     err_code = app_timer_create(&m_battery_timer_id, APP_TIMER_MODE_REPEATED, timer_battery_handler);
+    APP_ERROR_CHECK(err_code);
+    
+    
+    err_code = app_timer_create(&m_motor_safety_timer_id, APP_TIMER_MODE_SINGLE_SHOT, timer_motor_safety_handler);
     APP_ERROR_CHECK(err_code);
 }
 
@@ -334,6 +352,7 @@ static void on_adv_evt(ble_adv_evt_t ble_adv_evt)
  */
 static void on_ble_evt(ble_evt_t * p_ble_evt)
 {
+    uint32_t err_code;
     if(p_ble_evt->evt.gatts_evt.params.write.handle != m_ble_qik_motor.qik_speed_char_handles.value_handle)
         print_evt(p_ble_evt);
     
@@ -345,6 +364,17 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
 
         case BLE_GAP_EVT_DISCONNECTED:
             m_conn_handle = BLE_CONN_HANDLE_INVALID;
+            break;
+        
+        case BLE_GATTS_EVT_WRITE:
+            if(p_ble_evt->evt.gatts_evt.params.write.handle == m_ble_qik_motor.qik_speed_char_handles.value_handle)
+            {
+                err_code = app_timer_stop(m_motor_safety_timer_id);
+                APP_ERROR_CHECK(err_code);
+                err_code = app_timer_start(m_motor_safety_timer_id, TIMER_INTERVAL_MOTOR_SAFETY, NULL);
+                APP_ERROR_CHECK(err_code);
+                nrf_gpio_pin_toggle(LED_4);
+            }
             break;
 
         default:

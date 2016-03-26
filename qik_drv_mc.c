@@ -18,25 +18,12 @@
 #include "bsp.h"
 #include "nrf_drv_gpiote.h"
 #include "my_debug.h"
-#include "app_timer.h"
 
 #define QIK_DEBUG 
 
 bool waiting_for_byte = false;
 static uint8_t qik_drv_error_byte = 0;
 bool qik_drv_error = false;
-
-#define TIMER_INTERVAL_MOTOR_SAFETY APP_TIMER_TICKS(300, 0)
-APP_TIMER_DEF(m_motor_safety_timer_id);
-bool turn_off_motors = false;
-
-
-void timer_motor_safety_handler(void * p_context)
-{
-    m_qik_motor_control.speed.m0_speed = 0;
-    m_qik_motor_control.speed.m1_speed = 0;
-    qik_drv_set_motor_speed(&m_qik_motor_control);
-}
 
 
 static void in_pin_handler(nrf_drv_gpiote_pin_t pin, nrf_gpiote_polarity_t action)
@@ -171,14 +158,6 @@ uint32_t qik_drv_setup(qik_drv_mc_t * p_qik, uint32_t baud_rate, uint32_t qik_rx
     
     err_code = qik_drv_get_firmware_version(&p_qik->fw_id);
     MY_APP_ERROR_CHECK(err_code);
-    
-    
-    err_code = app_timer_create(&m_motor_safety_timer_id, APP_TIMER_MODE_REPEATED, timer_motor_safety_handler);
-    APP_ERROR_CHECK(err_code);
-    
-    
-    err_code = app_timer_start(m_motor_safety_timer_id, TIMER_INTERVAL_MOTOR_SAFETY, NULL);
-    APP_ERROR_CHECK(err_code);   
     
     return NRF_SUCCESS;
 }

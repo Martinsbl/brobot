@@ -8,7 +8,6 @@
 #include "my_debug.h"
 
 
-
 void ble_qik_motor_on_ble_evt(qik_drv_mc_t * p_qik_motor_control, ble_qik_motor_t * p_ble_qik_motor, ble_evt_t * p_ble_evt)
 {
     // OUR_JOB: Step 3.D Implement switch case handling BLE events related to our service. 
