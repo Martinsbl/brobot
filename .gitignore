@@ -1,0 +1,18 @@
+*.*
+*.uvguix.*
+!.gitignore
+
+# C files
+!*.c
+!*.h
+
+# Project files
+!*.uvprojx
+!*.uvoptx
+
+# Readme files
+!*.md
+
+# Folders
+/RTE/
+/_build/
